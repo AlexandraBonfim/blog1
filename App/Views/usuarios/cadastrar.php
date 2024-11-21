@@ -4,7 +4,10 @@
             Cadastre-se
         </div>
         <div class="card-body">
-            <p class="card-text"><small class="text-muted">Preecha o formulário abaixo para fazer seu cadastro</small></p>
+            <?=Sessao::mensagem('usuario')?>
+            <p class="card-text"><small
+             class="text-muted">Preecha o formulário abaixo para
+              fazer seu cadastro</small></p>
 
             <form name="cadastrar" method="POST" action="<?= URL ?>/usuarios/cadastrar" class="mt-4">
             <div class="form-group">
@@ -41,7 +44,8 @@
                         <input type="submit" value="Cadastrar" class="btn btn-info btn-block">
                     </div>
                     <div class="col">
-                        <a href="#">Você tem uma conta? Faça login</a>
+                        <a href="<?=URL?>/usuario/logar">Você
+                         tem uma conta? Faça login</a>
                     </div>
                 </div>
 
